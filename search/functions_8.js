@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['i_367',['I',['../classqrot_1_1Atom.html#afc00ffc868219c6261c061307f7a91d8',1,'qrot::Atom']]],
+  ['identity_368',['Identity',['../classqrot_1_1Matrix.html#a49ae3cdfc4b4b2945248b7abe638454b',1,'qrot::Matrix']]],
+  ['imag_369',['Imag',['../classqrot_1_1ComplexRing.html#a6066012ab56315298f994e2e8361f82a',1,'qrot::ComplexRing']]],
+  ['imagmut_370',['ImagMut',['../classqrot_1_1ComplexRing.html#a8e6a32fcbd271a401c519e58b57062d4',1,'qrot::ComplexRing']]],
+  ['initializestorage_371',['InitializeStorage',['../classqrot_1_1UnitaryDecomposer.html#ac891b8435319c52a700e52310b5dbc8e',1,'qrot::UnitaryDecomposer']]],
+  ['initializestorageimpl_372',['InitializeStorageImpl',['../classqrot_1_1UnitaryDecomposer.html#a0ae52e54e1dd75560f526e382556d648',1,'qrot::UnitaryDecomposer']]],
+  ['int_373',['Int',['../classqrot_1_1SqrtRing.html#ab13a2fdfd2cde776be6046d16b20d3bb',1,'qrot::SqrtRing']]],
+  ['intmut_374',['IntMut',['../classqrot_1_1SqrtRing.html#ae0cab3b4e928afb2e29d6cfebf0808c2',1,'qrot::SqrtRing']]],
+  ['inv_375',['Inv',['../classqrot_1_1Matrix.html#a4bef32cb76a4808fd5af089cdde66b84',1,'qrot::Matrix']]],
+  ['isclifford_376',['IsClifford',['../classqrot_1_1Atom.html#add67e35b1a0885626e7f0cf43cdaaf16',1,'qrot::Atom::IsClifford()'],['../classqrot_1_1Gate.html#ad08c393fb1566d5e2de484d8be3d8bed',1,'qrot::Gate::IsClifford()']]],
+  ['iscomplex_377',['IsComplex',['../classqrot_1_1ComplexRing.html#afc29035639804c7aae631f042af6e881',1,'qrot::ComplexRing']]],
+  ['isimag_378',['IsImag',['../classqrot_1_1ComplexRing.html#a4048eddde510fbfa75471bf879dd4c6d',1,'qrot::ComplexRing']]],
+  ['isinteger_379',['IsInteger',['../classqrot_1_1DyadicFraction.html#af55e4389ce185ccfaeb02c6fed7ffd09',1,'qrot::DyadicFraction']]],
+  ['ispositive_380',['IsPositive',['../namespaceqrot_1_1impl.html#ad74a801340bdd280030bf8d56da31c20',1,'qrot::impl']]],
+  ['isreal_381',['IsReal',['../classqrot_1_1ComplexRing.html#a086c306fcf92fb40b3b767e1fbb21b42',1,'qrot::ComplexRing']]],
+  ['isvalidsolution_382',['IsValidSolution',['../structqrot_1_1OneDimGridSolver_1_1Problem.html#a2805c341e547dbf961ca57f3f9fc4d13',1,'qrot::OneDimGridSolver::Problem']]]
+];
