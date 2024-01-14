@@ -4,11 +4,13 @@
 #include <compare>
 #include <iostream>
 #include <string>
+#include <utility>
 #include <vector>
 
 #include "qrot/matrix.h"
 
 namespace qrot {
+#pragma region Atom
 class Atom {
 public:
     enum class Type { I, H, S, T, X, Y, Z, W };
@@ -46,6 +48,8 @@ static constexpr auto Y = Atom::Y();
 static constexpr auto Z = Atom::Z();
 static constexpr auto W = Atom::W();
 }  // namespace constant::gate
+#pragma endregion Atom
+#pragma region Gate
 class Gate {
 public:
     using ConstIterator = std::vector<Atom>::const_iterator;
@@ -62,6 +66,10 @@ public:
     bool IsClifford() const;
     MCD2 Mat() const;
 
+    /**
+     * @brief Normalize Cliffort+T gates.
+     * @details See https://arxiv.org/abs/0806.3834 for more information.
+     */
     void Normalize();
 
     ConstIterator begin() { return atoms_.begin(); }
@@ -76,10 +84,55 @@ private:
     std::vector<Atom> atoms_;
 };
 std::ostream& operator<<(std::ostream& out, const Gate& g);
+bool operator==(const Gate& lhs, const Gate& rhs);
+bool operator==(const Gate& lhs, const Atom& rhs);
+bool operator==(const Atom& lhs, const Gate& rhs);
+bool operator!=(const Gate& lhs, const Gate& rhs);
+bool operator!=(const Gate& lhs, const Atom& rhs);
+bool operator!=(const Atom& lhs, const Gate& rhs);
 Gate operator*(Atom l, Atom r);
 Gate operator*(const Gate& l, Atom r);
 Gate operator*(Atom l, const Gate& r);
 Gate operator*(const Gate& l, const Gate& r);
+#pragma endregion Gate
+#pragma region CliffordDatabase
+class CliffordDatabase {
+public:
+    enum class Type {
+        CT,
+        HCT,
+        SHCT,
+        NotClifford,
+    };
+
+    CliffordDatabase();
+
+    static Type GetType(std::size_t idx);
+    std::size_t SearchIndex(const MCD2& mat) const;
+    const MCD2& GetMatrix(std::size_t idx) const { return c1_[idx].first; }
+    const Gate& GetGate(std::size_t idx) const { return c1_[idx].second; }
+    /**
+     * @brief Get the index of T-moved gate.
+     * @details
+     * Let C be the gate of `idx`.
+     * Calculate C' such that the equation C * T = P * T * C' holds true.
+     * if      idx < 64,  P = I
+     * else if idx < 128, P = H
+     * else               P = SH
+     *
+     * Return the index of C'
+     */
+    std::size_t GetTMove(std::size_t idx) const;
+
+private:
+    static constexpr std::size_t NumElements = 192;
+    static constexpr std::size_t NumCT = 64;
+
+    // Aligned in C_T(C_1), H C_T(C_1), SH C_T(C_1) order
+    std::vector<std::pair<MCD2, Gate>> c1_;
+    std::vector<std::size_t> move_;  // T^dag C_T T
+};
+#pragma endregion CliffordDatabase
 }  // namespace qrot
 
 #endif  // QROT_GATE_H
