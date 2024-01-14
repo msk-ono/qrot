@@ -137,8 +137,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af7fdee1fe68a343765e943b78e1149ea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="namespaceqrot.html#aa54ac497fbf751490a27ae45468d3bfa">MCD2</a>, <a class="el" href="classqrot_1_1Gate.html">Gate</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqrot_1_1CliffordDatabase.html#af7fdee1fe68a343765e943b78e1149ea">c1_</a></td></tr>
+<tr class="memdesc:af7fdee1fe68a343765e943b78e1149ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database of clifford group.  <a href="classqrot_1_1CliffordDatabase.html#af7fdee1fe68a343765e943b78e1149ea">More...</a><br /></td></tr>
 <tr class="separator:af7fdee1fe68a343765e943b78e1149ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a293c54002a1b96775fcd0612589ef32a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqrot_1_1CliffordDatabase.html#a293c54002a1b96775fcd0612589ef32a">move_</a></td></tr>
+<tr class="memdesc:a293c54002a1b96775fcd0612589ef32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information of TDag C_T T.  <a href="classqrot_1_1CliffordDatabase.html#a293c54002a1b96775fcd0612589ef32a">More...</a><br /></td></tr>
 <tr class="separator:a293c54002a1b96775fcd0612589ef32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -265,7 +267,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the index of T-moved gate. </p>
-<p>Let C be the gate of <code>idx</code>. Calculate C' such that the equation C * T = P * T * C' holds true. if idx &lt; 64, P = I else if idx &lt; 128, P = H else P = SH</p>
+<p>Let C be the gate of <code>idx</code> Calculate C' such that the equation C * T = P * T * C' holds if idx &lt; 64, P = I else if idx &lt; 128, P = H else P = SH</p>
 <p>Return the index of C' </p>
 
 </div>
@@ -335,6 +337,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Database of clifford group. </p>
+<p>Elements are arranged in the order C_T(C_1), H C_T(C_1), SH C_T(C_1) </p>
+
 </div>
 </div>
 <a id="a293c54002a1b96775fcd0612589ef32a"></a>
@@ -356,6 +361,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Information of TDag C_T T. </p>
 
 </div>
 </div>
