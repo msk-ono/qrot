@@ -1,0 +1,23 @@
+PROJECT_NAME          = "Approximating Qubit Z-Rotation with H, S, T"
+DOXYFILE_ENCODING     = UTF-8
+INPUT_ENCODING        = UTF-8
+MARKDOWN_SUPPORT      = YES
+HAVE_DOT              = YES
+DIRECTORY_GRAPH       = YES
+CALL_GRAPH            = NO
+CALLER_GRAPH          = NO
+GENERATE_HTML         = YES
+GENERATE_LATEX        = NO
+HTML_OUTPUT           = docs/html
+GENERATE_TREEVIEW     = YES
+DISABLE_INDEX         = NO
+HTML_EXTRA_STYLESHEET = externals/doxygen-awesome-css/doxygen-awesome.css
+
+INPUT                 = src/ README.md
+FILE_PATTERNS         = *.cpp *.h
+RECURSIVE             = YES
+EXTRACT_ALL           = YES
+EXTRACT_PRIVATE       = YES
+EXTRACT_STATIC        = YES
+BUILTIN_STL_SUPPORT   = YES
+INLINE_INFO           = YES
