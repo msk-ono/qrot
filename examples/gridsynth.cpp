@@ -76,7 +76,7 @@ std::string GridSynth(const AST& ast, const std::uint32_t digits) {
 int main(int argc, char** argv) {
     namespace po = boost::program_options;
 
-    // Define description.
+    // Define description
     // clang-format off
     auto description = po::options_description("Approximate z-rotation for arbitrary precision");
     description.add_options()

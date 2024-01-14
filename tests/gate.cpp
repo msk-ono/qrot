@@ -26,6 +26,7 @@ TEST(CliffordDatabase, Ctor) {
     auto database = CliffordDatabase();
 }
 TEST(Gate, Normalize) {
+    // Example from https://www.mathstat.dal.ca/~selinger/newsynth/
     const auto input = std::string(
         "SHTHTHTHTHTHTHTSHTHTHTHTSHTHTHTHTHTSHTSHTHTHTHTHTSHTHTHTSHTSHTHTSHTSHTSHTHTHTHTSHTHTHTHTHT"
         "SHTSHTHTSHTHTSHTSHTSHTSHTHTSHTSHTSHTSHTHTHTSHTSHTSHTHTHTHTSHTHTSHTHTHTSHTHTHTHTSHTHTSHTHTS"

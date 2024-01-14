@@ -67,7 +67,7 @@ public:
     MCD2 Mat() const;
 
     /**
-     * @brief Normalize Cliffort+T gates.
+     * @brief Normalize Clifford+T gates.
      * @details See https://arxiv.org/abs/0806.3834 for more information.
      */
     void Normalize();
@@ -114,8 +114,8 @@ public:
     /**
      * @brief Get the index of T-moved gate.
      * @details
-     * Let C be the gate of `idx`.
-     * Calculate C' such that the equation C * T = P * T * C' holds true.
+     * Let C be the gate of `idx`
+     * Calculate C' such that the equation C * T = P * T * C' holds
      * if      idx < 64,  P = I
      * else if idx < 128, P = H
      * else               P = SH
@@ -128,9 +128,12 @@ private:
     static constexpr std::size_t NumElements = 192;
     static constexpr std::size_t NumCT = 64;
 
-    // Aligned in C_T(C_1), H C_T(C_1), SH C_T(C_1) order
+    /**
+     * @brief Database of clifford group.
+     * @details Elements are arranged in the order C_T(C_1), H C_T(C_1), SH C_T(C_1)
+     */
     std::vector<std::pair<MCD2, Gate>> c1_;
-    std::vector<std::size_t> move_;  // T^dag C_T T
+    std::vector<std::size_t> move_;  //!< Information of TDag C_T T
 };
 #pragma endregion CliffordDatabase
 }  // namespace qrot
