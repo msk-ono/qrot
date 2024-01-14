@@ -1,4 +1,4 @@
-# Approximating Qubit Z-Rotation with H, S, T
+# Approximating Qubit Z-Rotation with H, S, T {#mainpage}
 
 This C++ implementation is based on the algorithm presented in the paper [Optimal ancilla-free Clifford+T approximation of z-rotations](https://arxiv.org/abs/1403.2975).
 This program is developed as part of my study.
