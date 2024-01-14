@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_580',['Y',['../classqrot_1_1Atom.html#a3373fafa3649bd25325c370cf356b918a57cec4137b614c87cb4e24a3d003a3e0',1,'qrot::Atom']]]
+  ['x_606',['X',['../classqrot_1_1Atom.html#a3373fafa3649bd25325c370cf356b918a02129bb861061d1a052c592e2dc6b383',1,'qrot::Atom']]]
 ];

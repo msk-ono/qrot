@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('gate_8h.html',''); initResizable(); })
 <div class="textblock"><code>#include &lt;compare&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="matrix_8h_source.html">qrot/matrix.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -101,14 +102,15 @@ Include dependency graph for gate.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="gate_8h__incl.png" border="0" usemap="#asrc_2qrot_2gate_8h" alt=""/></div>
 <map name="asrc_2qrot_2gate_8h" id="asrc_2qrot_2gate_8h">
-<area shape="rect" title=" " alt="" coords="131,5,247,32"/>
+<area shape="rect" title=" " alt="" coords="172,5,288,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,84,107"/>
 <area shape="rect" title=" " alt="" coords="82,229,162,256"/>
 <area shape="rect" title=" " alt="" coords="159,80,218,107"/>
-<area shape="rect" title=" " alt="" coords="243,80,305,107"/>
-<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="330,80,437,107"/>
+<area shape="rect" title=" " alt="" coords="243,80,303,107"/>
+<area shape="rect" title=" " alt="" coords="327,80,389,107"/>
+<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="414,80,521,107"/>
 <area shape="rect" href="boost_8h.html" title=" " alt="" coords="499,229,599,256"/>
-<area shape="rect" href="number_8h.html" title=" " alt="" coords="296,155,409,181"/>
+<area shape="rect" href="number_8h.html" title=" " alt="" coords="291,155,404,181"/>
 <area shape="rect" title=" " alt="" coords="293,304,447,345"/>
 <area shape="rect" title=" " alt="" coords="471,304,626,345"/>
 <area shape="rect" title=" " alt="" coords="650,304,805,345"/>
@@ -137,6 +139,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqrot_1_1Gate.html">qrot::Gate</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classqrot_1_1CliffordDatabase.html">qrot::CliffordDatabase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -153,6 +157,18 @@ Functions</h2></td></tr>
 <tr class="separator:ab26aff2105447de99db3b9b8bc78e5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac59fe8b8f1ae145599de964c71823d83"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#ac59fe8b8f1ae145599de964c71823d83">qrot::operator&lt;&lt;</a> (std::ostream &amp;out, const Gate &amp;g)</td></tr>
 <tr class="separator:ac59fe8b8f1ae145599de964c71823d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743cc5d93741a5f8b67c5b9819f26a8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#a743cc5d93741a5f8b67c5b9819f26a8d">qrot::operator==</a> (const Gate &amp;lhs, const Gate &amp;rhs)</td></tr>
+<tr class="separator:a743cc5d93741a5f8b67c5b9819f26a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df3f1f169683e86147206e11a2941a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#a5df3f1f169683e86147206e11a2941a1">qrot::operator==</a> (const Gate &amp;lhs, const Atom &amp;rhs)</td></tr>
+<tr class="separator:a5df3f1f169683e86147206e11a2941a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344b4b730d28b46376af5093f4529753"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#a344b4b730d28b46376af5093f4529753">qrot::operator==</a> (const Atom &amp;lhs, const Gate &amp;rhs)</td></tr>
+<tr class="separator:a344b4b730d28b46376af5093f4529753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d423656afe8ddc727caba140c167ca1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#a2d423656afe8ddc727caba140c167ca1">qrot::operator!=</a> (const Gate &amp;lhs, const Gate &amp;rhs)</td></tr>
+<tr class="separator:a2d423656afe8ddc727caba140c167ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f660416663d481a34a1e43c96bbd129"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#a8f660416663d481a34a1e43c96bbd129">qrot::operator!=</a> (const Gate &amp;lhs, const Atom &amp;rhs)</td></tr>
+<tr class="separator:a8f660416663d481a34a1e43c96bbd129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db34174df97e2661225ae879aa178c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#a3db34174df97e2661225ae879aa178c4">qrot::operator!=</a> (const Atom &amp;lhs, const Gate &amp;rhs)</td></tr>
+<tr class="separator:a3db34174df97e2661225ae879aa178c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6ed0658efaec6f727aa6aec8017d04"><td class="memItemLeft" align="right" valign="top">Gate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#ade6ed0658efaec6f727aa6aec8017d04">qrot::operator*</a> (Atom l, Atom r)</td></tr>
 <tr class="separator:ade6ed0658efaec6f727aa6aec8017d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e3eeac12b4f4de8a6b2de1a2a924fc2"><td class="memItemLeft" align="right" valign="top">Gate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqrot.html#a7e3eeac12b4f4de8a6b2de1a2a924fc2">qrot::operator*</a> (const Gate &amp;l, Atom r)</td></tr>

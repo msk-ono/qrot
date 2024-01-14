@@ -5,6 +5,7 @@ var annotated_dup =
       [ "Diophantine", "classqrot_1_1Diophantine.html", "classqrot_1_1Diophantine" ],
       [ "Atom", "classqrot_1_1Atom.html", "classqrot_1_1Atom" ],
       [ "Gate", "classqrot_1_1Gate.html", "classqrot_1_1Gate" ],
+      [ "CliffordDatabase", "classqrot_1_1CliffordDatabase.html", "classqrot_1_1CliffordDatabase" ],
       [ "BBox", "structqrot_1_1BBox.html", "structqrot_1_1BBox" ],
       [ "Ellipse", "classqrot_1_1Ellipse.html", "classqrot_1_1Ellipse" ],
       [ "OneDimGridSolver", "classqrot_1_1OneDimGridSolver.html", "classqrot_1_1OneDimGridSolver" ],

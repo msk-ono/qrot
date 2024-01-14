@@ -63,8 +63,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html",
-"namespaceqrot_1_1constant_1_1d2.html#ac99706ec225f3764b510644635022517"
+"classqrot_1_1Vector.html#a77ddcfce0c80a18824b9ce9ebda4ef4b",
+"namespaceqrot.html#ae1d346e2750328dbd692b7900a055d63",
+"structqrot_1_1TwoDimGridSolver_1_1Problem.html#aeb8cf39cdada10da8bce198121dc5a50"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
